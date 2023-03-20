@@ -1,0 +1,102 @@
+.destaques{
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: 33.3% 33.3% 33.3%;
+    height: calc(100vh - 50px);/*Altura 100% del tamaño de pantalla virtual, menos tamaño de encabezado*/
+    gap: .2rem;
+}
+
+.destaques__principal{
+    background-image: url('../img/fortnite.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    grid-column: 1/4;
+    grid-row: 1/3;
+ }
+ 
+
+.destaques__secundario:nth-child(2){
+    background-image: url('../img/pubg.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    grid-column: 4/4;
+    grid-row: 1/2;
+
+}
+
+
+.destaques__secundario:nth-child(3){
+    background-image: url('../img/slack.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    grid-column: 4/4;
+    grid-row: 2/3;
+}
+
+.destaques__secundario:nth-child(4){
+    background-image: url('../img/whatsapp.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    grid-column: 4/4;
+    grid-row: 3/3;
+}
+
+.destaques__secundario:nth-child(5){
+    background-image: url('../img/cs-go.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    grid-column: 3/4;
+    grid-row: 3/3;
+}
+
+.destaques__categorias{
+    grid-column: 1/3;
+    grid-row: 3/3;
+}
+
+.destaques__categorias___lista{
+    display: flex;
+    flex-wrap: wrap;
+    height: 100%;
+    justify-content: space-between;
+}
+
+.destaques__categorias___item{
+    background: #fdfdfd;
+    align-items: center;
+    display: flex;
+    color: #333333;
+    width: 50%;
+    padding: 1rem;
+}
+
+.destaques__categorias___link{
+    color: inherit;
+}
+
+.destaques__titulo{
+ /* background: black;
+    opacity: 50%;*/
+    background: rgb(0 , 0, 0, 0.5);
+    color: #fdfdfd;
+ 
+    text-align: center;
+    padding: .2rem;
+}
+
+
+
+.box{
+  
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column
+    
+
+
+}
